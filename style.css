@@ -33,6 +33,10 @@ body {
     margin: 10px;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 .profile {
     margin-top: 5%;
     display: grid;
@@ -60,12 +64,22 @@ body {
     border-bottom: 1px solid #ccc;
     padding: 8px 0;
     font-size: 20px;
-    margin-top: 25%;
+    margin-top: 20%;
+}
+
+.item p {
+    font-size: min(1.5vw);
 }
 
 ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    font-size: min(1.5vw);
 }
 
+hr {
+    border:0; 
+    height:70px; 
+    background:url("pics/Divider.jpg") 0 0;
+}
