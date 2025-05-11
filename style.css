@@ -49,20 +49,20 @@ img {
     margin-bottom: 10%;
 }
 
-.item {
+.items {
     padding: 10px;
     margin-top: 5%;
 }
 
-.item:nth-child(1) {
+.items:nth-child(1) {
     grid-column: 1;
 }
 
-.item:nth-child(2) {
+.items:nth-child(2) {
     grid-column: 2;
 }
 
-.item h2 {
+.items h2 {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     padding: 8px 0;
@@ -70,7 +70,7 @@ img {
     margin-top: 20%;
 }
 
-.item p {
+.items p {
     font-size: min(1.5vw);
 }
 
@@ -136,7 +136,7 @@ hr {
 }
 
 .things {
-       margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .things h1 {
@@ -163,4 +163,52 @@ hr {
     font-size: min(1.5vw);
     font-weight: 100;
     margin-top: 0%;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    gap: 30px 15px;
+    margin-bottom: 5%;
+}
+
+.trinkets:nth-child(1) {
+    grid-column: 1 / 4;
+}
+
+.trinkets:nth-child(2) {
+    grid-column: 1 / 1;
+}
+
+.trinkets:nth-child(3) {
+    grid-row: 0 / 0;
+    grid-column: 2 / 2;
+}
+
+.trinkets:nth-child(4) {
+    margin-top: 10%;
+    grid-column: 1 / 2;
+}
+
+.trinkets:nth-child(5) {
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+}
+
+.trinkets img {
+    border: 5px ridge burlywood;
+    margin-bottom: 5%;
+}
+
+.trinkets p {
+    margin-top: 20%;
+    font-size: 25px;
+    font-size: min(2.5vw);
+    text-align: left;
+}
+
+.trinkets label {
+    font-size: 30px;
+    font-size: min(2vw);
 }
