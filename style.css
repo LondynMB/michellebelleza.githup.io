@@ -87,6 +87,7 @@ hr {
     background: url("pics/Divider.jpg") 0 0;
     background-repeat: repeat-x;
     margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 .about {
@@ -196,7 +197,14 @@ hr {
     grid-row: 2 / 2;
 }
 
+.trinkets h1 {
+    font-size: 70px;
+    font-size: min(5vw);
+    border-bottom: 1px solid #f6f1ed;
+}
+
 .trinkets img {
+    margin-top: 15%;
     border: 5px ridge burlywood;
     margin-bottom: 5%;
 }
@@ -211,4 +219,55 @@ hr {
 .trinkets label {
     font-size: 30px;
     font-size: min(2vw);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 100px 1fr;
+    gap: 10px 10px;
+    background-color: #FFEDB7;
+}
+
+.object:nth-child(1) {
+    grid-column: 1 / 4;
+}
+
+.object:nth-child(2) {
+    grid-column: 1 / 1;
+}
+
+.object:nth-child(3) {
+    grid-row: 0 / 0;
+    grid-column: 2 / 2;
+}
+
+.object:nth-child(4) {
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+}
+
+.object h1 {
+    text-align: left;
+    padding-left: 5%;
+    font-size: 70px;
+    font-size: min(4vw);
+    border-bottom: 1px solid #f6f1ed;
+}
+
+.object h2 {
+    font-size: 25px;
+    font-size: min(2vw);
+    margin-bottom: 0%;
+    padding-left: 5%;
+    text-align: left;
+}
+
+.object p {
+    font-size: 20px;
+    font-size: min(1.5vw);
+    font-weight: 100;
+    margin-top: 0%;
+    padding-left: 5%;
+    text-align: left;
 }
